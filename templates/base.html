@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XXX</title>
+</head>
+<body>
+{{range .secrets}}
+<p>{{ .Name }}</p>
+{{range .Data }}
+    <p><br>{{printf "%s" .}}</p>
+{{end}}
+{{end}}
+</body>
+</html>
